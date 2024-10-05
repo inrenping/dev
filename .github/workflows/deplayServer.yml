@@ -24,8 +24,8 @@ jobs:
       with:
         host: ${{ secrets.SERVER_IP }}
         port: ${{ secrets.SERVER_PORT }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
+        user: ${{ secrets.USERNAME }}
+        pass: ${{ secrets.PASSWORD }}
         scp: |
           ./dist/* => /var/www/dist/
         last_ssh: |
